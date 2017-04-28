@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="es-ES">
+    <head>
+        <meta charset="UTF-8" />
+		<title>Sistema on-line de turnos</title>
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="http://cemep.sistema-de-turnos.com.ar/static/css/login.css
+<view-source:http://cemep.sistema-de-turnos.com.ar/static/css/login.css>" type="text/css" />
+		<meta name="description" content="Descripcion del consultorio" />
+		<meta name="keywords" content="consultorio, clinica, turnos online, turnos, turnos on-line" />
+
+		<meta property="description" content="Descripcion del consultorio"/>
+		<meta property="title" content="Cemep - consultorio"/>
+		<meta property="og:url" content="http://cemep.sistema-de-turnos.com.ar/"/>
+		<meta property="og:site_name" content="Cemep - consultorio"/>
+		<meta property="og:title" content="Cemep - consultorio"/>
+		<meta property="og:description" content="Descripcion del consultorio"/>
+
+		<meta itemprop="url" content="http://cemep.sistema-de-turnos.com.ar/"/>
+		<meta itemprop="name" content="Cemep - consultorio"/>
+		<meta itemprop="title" content="Cemep - consultorio"/>
+		<meta itemprop="description" content="Descripcion del consultorio"/>
+
+		<script type="text/javascript" src="http://cemep.sistema-de-turnos.com.ar/static/js/lib/jquery-1.9.1.min.js
+<view-source:http://cemep.sistema-de-turnos.com.ar/static/js/lib/jquery-1.9.1.min.js>"></script>
+
+		<script type="text/javascript" src="http://cemep.sistema-de-turnos.com.ar/static/js/lib/jquery-ui-1.10.3.min.js
+<view-source:http://cemep.sistema-de-turnos.com.ar/static/js/lib/jquery-ui-1.10.3.min.js>"></script>
+		<script type="text/javascript" src="http://cemep.sistema-de-turnos.com.ar/static/js/lib/jquery.ui.timepicker.js
+<view-source:http://cemep.sistema-de-turnos.com.ar/static/js/lib/jquery.ui.timepicker.js>"></script>
+		<link rel="stylesheet" href="http://cemep.sistema-de-turnos.com.ar/static/css/jquery-ui.css
+<view-source:http://cemep.sistema-de-turnos.com.ar/static/css/jquery-ui.css>" />
+
+		<script type="text/javascript" src="http://cemep.sistema-de-turnos.com.ar/static/js/lib/jquery.alerts.js
+<view-source:http://cemep.sistema-de-turnos.com.ar/static/js/lib/jquery.alerts.js>"></script>
+
+		<script type="text/javascript" src="http://cemep.sistema-de-turnos.com.ar/static/js/login.js
+<view-source:http://cemep.sistema-de-turnos.com.ar/static/js/login.js>"></script>
+
+		    </head>
+    <body>
+		<div id="loading"></div>
+
+		<div class="logo">
+			<img src="http://cemep.sistema-de-turnos.com.ar/uploads/turnosite/1/cemep-logo-blue.png
+<view-source:http://cemep.sistema-de-turnos.com.ar/uploads/turnosite/1/cemep-logo-blue.png>" width="200" height="79"/>
+		</div>
+
+
+<script>
+	var navegadorHTML5 = 0;
+</script>
+<div id="step1" value="1" class="master-field">
+	<h1>Bienvenido a nuestro sistema de turnos<h1/>
+	<small>Paso 1</small>
+    <p> Por favor, 
+			 seleccione su Obra social		</p>
+	<div class="select-wrap">
+		<select id="opcion1" name="os" class="step" number="1" data-rel="chosen">
+			<option value="">
+			Seleccione su obra social			</option>
+<option value="48">Camioneros</option><option value="25">Corte Suprema de Justicia</option><option value="50">D.A.S</option><option value="12">Dasuten</option><option value="37">Dgbpfa</option><option value="19">Diba</option><option value="18">Galeno</option><option value="43">Generar Salud</option><option value="42">Gerdana Salud</option><option value="40">Hospital Aleman Asociacion Civil</option><option value="7">Ipauss</option><option value="44">Jerarquicos Salud</option><option value="33">Luz y Fuerza</option><option value="3">Medicus</option><option value="8">Medife</option><option value="21">Medlink (pmo, clasico, accord salud, monotributista)</option><option value="13">O.s.p.i.p</option><option value="14">O.s.p.i.t</option><option value="15">O.s.p.i.v</option><option value="27">O.s.p.s.a</option><option value="23">Omint</option><option value="1">Osde</option><option value="30">Osdipp</option><option value="20">Osecac</option><option value="24">Osetya</option><option value="51">Osmata</option><option value="26">Osmedica</option><option value="10">Ospecon</option><option value="29">Ospedyc</option><option value="31">Ospegap (Integración Medica)</option><option value="11">Osplad</option><option value="36">Osppra-Prensamed</option><option value="45">Osprera</option><option value="16">Ossimra</option><option value="17">Osuthgra</option><option value="9">Pami</option><option value="39">Particular</option><option value="34">Personal de Farmacia</option><option value="49">Policia Federal</option><option value="28">Sancor Salud</option><option value="2">Swiss Medical / Docthos</option><option value="35">Television</option><option value="47">U.O.M.</option>		</select>
+	</div>
+	
+	<div id='descripcion_tn1' class='preparacion'></div>
+</div>
+<div id="step2" class="divstep master-field" value="2">
+	<small>Paso 2</small>
+    <p>Seleccione el servicio</p>
+	
+	<div class="select-wrap">
+		<select id="opcion2" name="sr" class="step" data-placeholder="Seleccione el servicio" number="2" data-rel="chosen">
+			<option value=""></option>
+		</select>
+	</div>
+</div>
+<div id="step3" class="divstep master-field" value="3"> 
+	<small>Paso 3</small>
+    <p></p>
+	<div class="select-wrap">
+		<select id="opcion3" name="ag" class="step" data-placeholder="Seleccione agrupacion" number="3" data-rel="chosen">
+			<option value="">Seleccione agrupacion</option>
+		</select>
+	</div>
+</div>
+<div id="step4" class="divstep master-field" value="4">
+	<small>Paso 3</small>
+    <p>Por favor, seleccione el estudio por el cual requiere el turno    </p>
+	
+	<div class="select-wrap">
+		<select id="opcion4" name="es" class="step" data-placeholder="Seleccione el Estudio" number="4" data-rel="chosen">
+			<option value="">Seleccione el estudio</option>
+		</select>
+	</div>
+</div>
+<div id="step5" class="divstep master-field" value="5"> 
+	<div id="prep" class='preparacion'></div>
+	<small>Paso 4</small>
+    <p>Por favor, complete los siguientes datos adicionales</p>
+	<input type="text" placeholder="Nombre" name="nombre" maxlength="100" class="field" obligatorio="true"><input type="text" placeholder="Telefono" name="telefono" maxlength="45" class="field" obligatorio="true"><input type="text" placeholder="DNI" name="dni" maxlength="10" class="field numeric0" obligatorio="true"><input type="text" placeholder="Ingrese aquí su email" maxlength="100" name="email" class="field" obligatorio="true"></div>
+  
+<div id="step6" class="divstep master-field-fecha" value="6"> 
+	<small>Paso 5</small>
+    <p>Seleccione una fecha <a href='# <view-source:http://cemep.sistema-de-turnos.com.ar/#>' class='js-modal'>(click para ver horarios de atencion)</a></p>
+	<small>Elija un 1er horario tentativo</small>
+
+			<input type="text" placeholder="Día" name="fecha1" class='datepicker field'/>
+	
+	<div class="select-wrap field">
+		<select class="hr" data-placeholder="Hora" data-rel="chosen" name="hora1" >
+			<option value="-1">Hora</option>
+			<option value="8">8 hs.</option>
+			<option value="9">9 hs.</option>
+			<option value="10">10 hs.</option>
+			<option value="11">11 hs.</option>
+			<option value="12">12 hs.</option>
+			<option value="13">13 hs.</option>
+			<option value="14">14 hs.</option>
+			<option value="15">15 hs.</option>
+			<option value="16">16 hs.</option>
+			<option value="17">17 hs.</option>
+			<option value="18">18 hs.</option>
+			<option value="19">19 hs.</option>
+			<option value="20">20 hs.</option>
+
+		</select>
+	</div>
+	<div class="select-wrap field">
+		<select id="comboMinutos" data-placeholder="Minutos" data-rel="chosen" name="minuto1" >
+			<option value="-1">Minutos</option>
+				<option value="00">00</option>
+				<option value="15">15</option>
+				<option value="30">30</option>
+				<option value="30">45</option>
+		</select>
+	</div>
+
+	<small>Elija un 2do horario tentativo</small>
+
+			<input type="text" placeholder="Día" name="fecha2" class="datepicker field"/>
+	
+	<div class="select-wrap field">
+		<select class="hr" data-placeholder="Hora" data-rel="chosen" name="hora2" >
+			<option value="-1">Hora</option>
+			<option value="6">6 hs.</option>
+			<option value="7">7 hs.</option>
+			<option value="8">8 hs.</option>
+			<option value="9">9 hs.</option>
+			<option value="10">10 hs.</option>
+			<option value="11">11 hs.</option>
+			<option value="12">12 hs.</option>
+			<option value="13">13 hs.</option>
+			<option value="14">14 hs.</option>
+			<option value="15">15 hs.</option>
+			<option value="16">16 hs.</option>
+			<option value="17">17 hs.</option>
+			<option value="18">18 hs.</option>
+			<option value="19">19 hs.</option>
+			<option value="20">20 hs.</option>
+			<option value="21">21 hs.</option>
+			<option value="22">22 hs.</option>
+			<option value="23">23 hs.</option>
+		</select>
+	</div>
+    
+	<div class="select-wrap field">
+		<select id="comboMinutos2" data-placeholder="Minutos" data-rel="chosen" name="minuto2" >
+			<option value="-1">Minutos</option>
+				<option value="00">00</option>
+				<option value="15">15</option>
+				<option value="30">30</option>
+		</select>
+	</div>
+	
+    <a class="button js-finish">Terminar</a>
+</div>
+
+<div class="modal hide fade" id="myModal">
+	<div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal">×</button>
+		<h3>Horarios de atención</h3>
+	</div>
+	<div class="modal-body">
+			</div>
+	<div class="modal-footer">
+		<a href="# <view-source:http://cemep.sistema-de-turnos.com.ar/#>" class="btn" data-dismiss="modal">Cerrar</a>
+	</div>
+</div>
+
+	</body>
+	<script src="http://cemep.sistema-de-turnos.com.ar/static/js/bootstrap.min.js
+<view-source:http://cemep.sistema-de-turnos.com.ar/static/js/bootstrap.min.js>"></script>
+	</html>
+
